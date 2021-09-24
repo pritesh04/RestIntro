@@ -13,4 +13,10 @@ public class DemoRestController {
 		return "Hello from Bridgelabs";
 	}
 	
+	@RequestMapping(value = "/webb")
+	public String restValue(@RequestParam(value = "name") String name) {
+		return "Hello from Bridgelabs " +name ;
+	}
+	
+	
 }
